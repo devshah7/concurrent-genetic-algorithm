@@ -1,0 +1,9 @@
+ArgParse == 1.1.4
+YAML == 0.4.7
+StatsBase == 0.33.21
+Distributions == 0.25.75
+Flux == 0.13.6
+OrderedCollections == 1.4.1
+Plots == 1.35.5
+Distances == 0.10.7
+Luxor == 3.5.0

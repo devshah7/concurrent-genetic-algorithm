@@ -1,0 +1,27 @@
+evolutions:
+  num_total_evolutions: 10
+population:
+  pop_size: 100
+environment:
+  num_rows: 75  # num cols aswell
+  fraction_food: 2  # mutliple/fraction of population
+episode:
+  max_num_steps: 100
+  food_respawn_range: [10, 20]  # can be null if no respawning food during an episode, otherwise range like [5, 15] (in episode steps)
+individual:
+  inputs: [closest_food_x, closest_food_y]
+  missing_input_position_padding: 0
+  num_actions: 2
+  sensor_radius: 8
+  action_sampling: prob
+ga:
+  elite_frac: 0.05
+  mutation_prob_max: 0.5
+  mutation_frac_change_max: 0.25
+  elite_method: top_selection
+  parent_method: roultette
+  crossover_method: one_point_crossover
+  k: 5
+neural_network:
+  num_hidden_layer_nodes: 8
+  hidden_layer_act_func: tanh  # tanh, sigmoid or relu
